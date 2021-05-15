@@ -62,3 +62,7 @@ module "mod_vm" {
     admin_password = var.admin_password
     admin_username = var.admin_username
 }
+
+output "External_IP" {
+    value = module.mod_vm.public_ip_address 
+}
