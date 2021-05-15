@@ -1,2 +1,5 @@
-# Project-1
- New repository Terraform
+Hello,
+
+This is my first script with Terraform.
+
+Thank you
