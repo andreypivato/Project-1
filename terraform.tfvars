@@ -1,5 +1,5 @@
 #Global
-xsubscription = "63ae32e9-6c2a-4534-b763-1f95b01377f8"
+xsubscription = "<Your Subscription ID>"
 xresource_group_name = "TFResourceGroup"
 xlocation = "eastus2"
 
