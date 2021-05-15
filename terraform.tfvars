@@ -1,11 +1,11 @@
 #Global
-xsubscription = "63ae32e9-6c2a-4534-b763-1f95b01377f8"
+xsubscription = "3fdbc4af-210e-4f2f-8955-21c34cef6bdf"
 xresource_group_name = "TFResourceGroup"
 xlocation = "eastus2"
 
 #Virtual Network
 xvnet_name = "TFVnet"
-xvnet_scope = ["10.0.0.0/16"]
+xvnet_scope = ["10.10.0.0/16"]
 xvnet_subnet_name = "TFSubnet01"
 xvnet_scope_subnet = ["10.10.1.0/24"]
 xnsg_name = "TFNsg"

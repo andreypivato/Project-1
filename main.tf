@@ -34,14 +34,13 @@ module "mod_nsg" {
 }
 
 resource "azurerm_subnet_network_security_group_association" "tfnsg2tfsubnet" {
-    subnet_id = module.mod_vnet.output_vnet
-    network_security_group_id = module.mod_nsg.output_nsg 
+    subnet_id = module.mod_vnet.output_subnet
+    network_security_group_id = module.mod_nsg.output_nsg
 }
 
 variable "admin_password" {
     description = "Admin User"
 }
-
 variable "admin_username" {
     description = "Admin Password"
 }
@@ -60,6 +59,6 @@ module "mod_vm" {
     tfos_image_publisher = var.xtfos_image_publisher
     tfos_image_offer = var.xtfos_image_offer
     tfos_image_sku = var.xtfos_image_sku
-    admin_password = ""
-    admin_username = ""
+    admin_password = var.admin_password
+    admin_username = var.admin_username
 }

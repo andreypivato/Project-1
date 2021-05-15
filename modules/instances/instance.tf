@@ -59,6 +59,6 @@ resource "azurerm_virtual_machine" "tfvm" {
 
 data "azurerm_public_ip" "ip" {
     name                = azurerm_public_ip.tfpublicip.name
-    resource_group_name = var.tfvnet_nic_location
+    resource_group_name = azurerm_virtual_machine.tfvm.resource_group_name
     depends_on          = [azurerm_virtual_machine.tfvm]
 }
